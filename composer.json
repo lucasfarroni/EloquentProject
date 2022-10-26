@@ -5,5 +5,7 @@
             "Lucasfarroni\\EloquentProject\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "ext-pdo": "*"
+    }
 }
