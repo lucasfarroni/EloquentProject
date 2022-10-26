@@ -18,9 +18,15 @@ class Model
         }
     }
 
-    public function __get(){}
+    public function __get(string $name): mixed
+    {
+        if (array_key_exists($name, $this->_v))
+            return $this->_v[$name];
+    }
 
-
-    public  function __set(){}
+    public function __set(string $name, mixed $val): void
+    {
+        $this→_v[$name] = $val;
+    }
 
 }
