@@ -18,5 +18,9 @@ class Model
         }
     }
 
+    public function __get(){}
+
+
+    public  function __set(){}
 
 }
